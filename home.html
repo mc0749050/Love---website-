@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>I Love You</title>
+  <style>
+  body{
+    background: #A4F7FF;
+  }
+    .video-container{
+      width: 80vw;
+      height: 72vh;
+      margin-top: 10vh;
+      margin-left: 8vw;
+      position: relative;
+  
+    }
+    .video-container video{
+      background-size: auto;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;
+    }
+    img{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: 6;
+      top: 0px;
+      left: 0px;
+    }
+    p{
+    
+      position: fixed;
+      z-index: 777;
+      font-size: 30px;
+      font-family: cursive;
+      color: #2F0E03;
+      top: 300px;
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+  <p id="p">Click To Open</p>
+  <img onclick="removeGift()" id="img" src="gift.jpg" alt="gift.jpg">
+ <div class="container">
+   <div class="video-container">
+     <video id="video" src="video.mp4" loop></video>
+   </div>
+   <div class="base-container"></div>
+ </div>
+ 
+ <audio id="backMusic" src="backsong.mp3">backsong.mp3</audio>
+  
+  <script>
+    function removeGift(){
+      document.getElementById("img").style.display = "none";
+      document.getElementById("p").style.display = "none";
+      document.getElementById("video").play();
+      document.getElementById("backMusic").play();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #FFEAA6;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+ position: fixed;
+}
+.container p{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+}
+.container p span{
+  color: #EB2300;
+  font-family: cursive;
+}
+.container img{
+  width: 280px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.btn-div{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.btn-div button{
+  width: 100px;
+  height: 35px;
+}
+.btn-1{
+  color: #ffffff;
+  background: #9A54FF;
+  border: 0.3px solid #0D011F;
+}
+.btn-1:active{
+  width: 90px;
+  height: 31.5px;
+  margin-top: 2px;
+  margin-left: 5px;
+  background: #AA80E8;
+}
+.btn-2{
+  color: #ffffff;
+  background: #9A54FF;
+  border: 0.3px solid #0D011F;
+}
+.btn-2:active{
+  width: 90px;
+  height: 31.5px;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: #ffffff;
+  background: #E65F8D;
+  border: 0.3px solid #0D011F;
+}
+.btn-1:active{
+  width: 90px;
+  height: 31.5px;
+  margin-top: 2px;
+  margin-left: 5px;
+  background: #E65F8D;
+}
+#dimpi{
+  position: absolute;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: cursive;
+  top: 170px;
+  left: 150px;
+  color: #FFFFFF;
+  text-shadow: 6px 6px 12px #000000
+}
